@@ -151,7 +151,7 @@ main{
     } 
 
     .cards li{
-        width: 450px;
+        width: 80%;
     }
 
     .cards li:first-child,
