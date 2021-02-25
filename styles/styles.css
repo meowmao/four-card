@@ -1,0 +1,107 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --gray: rgb(80, 79, 79);
+    --ltgray: rgba(80, 79, 79,0.5);
+
+}
+
+body,
+main,
+h1,
+h2,
+p,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    color: var(--gray);
+}
+
+body{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+p{
+    color:var(--ltgray);
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    padding: 91px 30px;
+}
+
+.header{
+    margin-top: 23px;
+    margin-bottom: 80px;
+}
+
+.header h1{
+    font-weight: 200;
+}
+
+.header h1:last-of-type{
+    font-weight: 600;
+}
+
+.header p{
+    margin-top: 24px;
+}
+
+.cards{
+    text-align: left;
+}
+
+.cards li{
+    border-radius: 5%;
+    padding: 30px;
+    height: 220px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    box-shadow: 0 3px 20px rgba(80, 79, 79,0.25);
+
+/*media query
+ width: 354px */
+
+}
+
+.cards .__cyan,
+.cards .__red,
+.cards .__orange,
+.cards .__blue{
+    position: relative;
+}
+
+.cards img{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+}
+
+.cards .__cyan{
+    border-top: 3px solid var(--cyan);
+}
+
+.cards .__red{
+    border-top: 3px solid var(--red);
+}
+
+.cards .__orange{
+    border-top: 3px solid var(--orange);
+}
+
+.cards .__blue{
+    border-top: 3px solid var(--blue);
+}
